@@ -1437,8 +1437,9 @@ _.isEqual(moe, clone);
       <p id="isEmpty">
         <b class="header">isEmpty</b><code>_.isEmpty(object)</code>
         <br />
-        Returns <i>true</i> if an enumerable <b>object</b> contains no values
-        (no enumerable own-properties).
+        Returns <i>true</i> if an enumerable <b>object</b> contains no values.
+        For strings and arrays it checks for <tt>length === 0</tt>. For objects it
+        checks that the object has no enumerable own-properties.
       </p>
       <pre>
 _.isEmpty([1, 2, 3]);
